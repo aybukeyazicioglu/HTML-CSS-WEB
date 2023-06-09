@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600&display=swap');
+:root{
+    --main-color: #521147;
+    --black-color: #0e0e0e;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none; 
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--main-color); 
+}
+section{
+    padding: 3.5rem 7%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 12px 28px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20rem;
+    font-size: 1.7rem; 
+    color: white; 
+    background-color:rgba(0, 0, 0, 0.4);
+    cursor: pointer; 
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: transparent;
+    letter-spacing: 2px;
+}
+.container{
+    background: url(../images/background.png); 
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 13px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: gold;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 10px;
+    transition: all .4s ease-in-out;
+    margin: 10px;
+}
+.section_title h2:hover{
+    background-color: gold;
+}
+.ANASAYFA{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    margin-top: -24.5rem;
+    background: rgba(0, 0, 0, 0.4);
+}
+.ANASAYFA .content{
+    max-width: 60rem;
+}
+.ANASAYFA .content h3{
+    font-size: 6rem;
+    color: white;
+}
+.ANASAYFA .content p{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    line-height: 1.8;
+}
+
+.inner_courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.child_courses{
+    flex-basis: 24%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 20px 5px 20px 5px;
+    transition: .4s;
+}
+.child_courses:hover{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.child_courses .detail{
+    display: flex;
+    justify-content: space-between;
+}
+.child_courses .detail ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+.detail ul li{
+    color: gold;
+    list-style-type: none;
+    padding-left: 0;
+}
+.inner_courses h3{
+    color: rgb(0, 0, 0);
+}
+.section_title h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+
+.inner_software{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+}
+.inner_software_child{
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: all .4s ease-in-out;
+    padding: 30px 25px 30px 25px;
+    color: #0e0e0e;
+    flex-basis: 30%;
+    background: rgba(167, 149, 149, 0.4);
+}
+.inner_software_child:hover{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.inner_software_child .icon{
+    color: gold;
+    font-size: 35px;
+}
+.inner_software_child h3{
+    font-size: 25px;
+    margin: 5px 1px;
+}
+.inner_software_child p{
+    font-size: 13px;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+    background-color: rgb(17, 16, 16);
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    border-radius: 50%;
+}
+.socialicons a i{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+}
+.socialicons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+.socialicons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+    padding-left: 0;
+    margin-left: 10px;
+}
+.footerbottom{
+    background-color: black;
+    padding: 20px; 
+    text-align: center; 
+    color: white;
+}
+.footerbottom p{
+    color: white;
+}
+
+.designer{ 
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+.hakkimda{ 
+    width: 100%;
+    height: 500px;
+    margin: 110px 0 250px 0;
+}
+.hakkimda img{
+    height: 450px;
+    width: 620px;
+}
+.hakkimda-text{
+    margin-left: 30px;
+    width: 500px;
+}
+.main{
+    width: 1130px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hakkimda-text h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.hakkimda-text h5{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.hakkimda-text h5 span{
+    color: gold;
+}
+.hakkimda-text p{
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button{
+    background: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px; 
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+iframe{ 
+    height: 450px;
+    width: 620px;
+    margin: 10px auto 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.konum h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    transition: all .4s ease-in-out;
+    margin: 10px; 
+}
+.konum h1:hover{
+    background-color: gold; 
+}
+
+#contact{   
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.ccontainer{
+    width: 80%;
+    margin: 0 auto;
+}
+.title{
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    transition: all .4s ease-in-out;
+    margin: 10px;
+}
+.title:hover{
+    background-color: gold;
+}
+.contact-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-left{
+    width: 40%;
+    padding: 3rem;
+}
+.cont-top{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+.cont-element{
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.cont-element i{
+    color: black;
+    padding: 0.7rem;
+    border-radius: 50%;
+    border: 2px solid gold;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all 0.4s ease;
+}
+.cont-element:hover i{
+    background-color: gold;
+    color: rgb(0, 0, 0);
+}
+.cont-element a{
+    color: black;
+    text-decoration: none;
+}
+.cont-right{
+    width: 60%;
+    padding: 3rem;
+}
+.cont-right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont-right form input, textarea{
+    width: 100%;
+    margin: 1rem 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid black;
+    color: #0e0e0e;
+    transition: all 0.4s ease;
+}
+.cont-right form{
+    color: rgb(0, 0, 0);
+    cursor:rgb(0, 0, 0)
+}
+.cont-right form input:hover, textarea:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.cont-right form input:focus, textarea:focus{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
